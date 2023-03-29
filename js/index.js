@@ -14,12 +14,17 @@ const form = {
         console.log(rectangle);
         const circle = new Circle("circle",20);
         console.log(circle);
+        document.querySelector("#form").addEventListener("submit", this.submitForm);
     },
+    
+
     inputElementsWithLabel(label, id) {
 
     },
     submitForm(e) {
-
+        e.preventDefault();
+        console.log('ok');
+        
     }
 };
 
